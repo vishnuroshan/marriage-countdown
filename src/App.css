@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+}
+.video-responsive {
+  display: flex;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.video-responsive iframe {
+
+  aspect-ratio: 16 / 9;
+  width: 100% !important;
+  border-radius: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.countdown {
+  width: 100%
+}
+
+
+.clock {
+  --fcc-digit-block-width: 40px;
+  --fcc-digit-block-height: 60px;
+  --fcc-digit-font-size: 26px; 
+}
+
+/* @media (min-width: 844px) {
+  .container {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .clock {
+    --fcc-digit-block-width: 36px;
+    --fcc-digit-block-height: 56px;
+    --fcc-digit-font-size: 24px; 
+  }
+
+  
+}
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  clock {
+    --fcc-digit-block-width: 36px;
+    --fcc-digit-block-height: 56px;
+    --fcc-digit-font-size: 24px; 
+  }
+
+  
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+  .clock {
+    --fcc-digit-block-width: 36px;
+    --fcc-digit-block-height: 56px;
+    --fcc-digit-font-size: 24px; 
+  }
+  
+} */
+
+@media (min-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  
+.clock {
+--fcc-digit-block-width: 34px;
+--fcc-digit-block-height: 54px;
+--fcc-digit-font-size: 24px; 
+}
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  
+  .clock {
+  --fcc-digit-block-width: 38px;
+  --fcc-digit-block-height: 58px;
+  --fcc-digit-font-size: 26px; 
+  }
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+  
+  .clock {
+  --fcc-digit-block-width: 40px;
+  --fcc-digit-block-height: 60px;
+  --fcc-digit-font-size: 28px; 
+  }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+  .clock {
+  --fcc-digit-block-width: 40px;
+  --fcc-digit-block-height: 60px;
+  --fcc-digit-font-size: 30px; 
+  }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+  
+  .clock {
+  --fcc-digit-block-width: 40px;
+  --fcc-digit-block-height: 60px;
+  --fcc-digit-font-size: 30px; 
+  }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+
+  
+  .clock {
+  --fcc-digit-block-width: 48px;
+  --fcc-digit-block-height: 68px;
+  --fcc-digit-font-size: 38px; 
   }
 }
