@@ -23,6 +23,22 @@ function App() {
             title="Wedding invite"
           />
         </div>
+        <ul>
+          <li>
+            <strong>Engagement</strong>
+            <p>15 Sep 2024 (6PM onwards) - Hotel Mayas, Trichy.</p>
+          </li>
+          <li>
+            <strong>Marriage</strong>
+            <p>16 Sep 20224 (5AM - 6AM) - Jambukeswarar Temple, Thiruvanaikaval, Trichy</p>
+
+            <p>16 Sep 20224 (6AM onwards) - Hotel Mayas, Trichy.</p>
+          </li>
+          <li>
+            <strong>Reception</strong>
+            <p>16 Sep 2024 (6PM onwards) - Hotel Oriental Towers, Thanjavur</p>
+          </li>
+        </ul>
       </div>
     </main>
   );
