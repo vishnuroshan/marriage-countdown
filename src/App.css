@@ -1,7 +1,4 @@
-html {
-  height: 100%;
-  width: 100%;
-}
+
 .container {
   padding-right: 1em;
   padding-left: 1em;
@@ -11,6 +8,7 @@ html {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  
 }
 .video-responsive {
   display: flex;
@@ -31,11 +29,15 @@ html {
   align-content: center;
   justify-content: center;
   align-items: stretch;
-  height: 100%
 }
 
 .countdown {
-  width: 100%
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 li {
