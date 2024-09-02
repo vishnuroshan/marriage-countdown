@@ -1,5 +1,5 @@
 function Currency() {
-    return <>currency conversion</>
+    return <div>currency conversion</div>
 }
 
 export default Currency;

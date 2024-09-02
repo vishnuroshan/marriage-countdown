@@ -1,10 +1,19 @@
 import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 import './App.css';
+import { useNavigate } from "react-router-dom";
+
 
 function App() {
+  const navigate = useNavigate();
+  function navigateToCurrency() {
+    
+      navigate("/c");
+    
+  }
   return (
     <main className="container">
+
       <div className="center">
         <div className='countdown'>
           <FlipClockCountdown className='clock' to={new Date('September 16, 2024 05:00:00').getTime()}
@@ -13,6 +22,7 @@ function App() {
             I am married!
           </FlipClockCountdown>
         </div>
+        <button className='btn' onClick={navigateToCurrency}>Currency</button>
 
         <div className="video-responsive">
           <iframe
