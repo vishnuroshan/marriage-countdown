@@ -7,9 +7,7 @@ import { useNavigate } from "react-router-dom";
 function App() {
   const navigate = useNavigate();
   function navigateToCurrency() {
-    
       navigate("/c");
-    
   }
   return (
     <main className="container">
