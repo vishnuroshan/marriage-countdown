@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 function Currency() {
     const URL = 'https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_zFELy3gvNjm616fVH0KWwl1a3Q6CWyieUm4rwbEa';
 
-    const [config, setConfig] = useState({ t: 'INR', b: 'IDR' });
+    const [config] = useState({ t: 'INR', b: 'IDR' });
     const [conversionRate, setConversionRate] = useState('');
     const [converted, setConverted] = useState(0);
 
