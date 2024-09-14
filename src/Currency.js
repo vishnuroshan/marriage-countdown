@@ -53,18 +53,18 @@ function Currency() {
         disable();
     }
 
-    async function reverse() {
-        if (config.b === 'IDR') {
-            setConfig({
-                b: 'INR', t: 'IDR'
-            })
-        } else {
-            setConfig({
-                b: 'IDR', t: 'INR'
-            })
-        }
-        await getCurrency()
-    }
+    // async function reverse() {
+    //     if (config.b === 'IDR') {
+    //         setConfig({
+    //             b: 'INR', t: 'IDR'
+    //         })
+    //     } else {
+    //         setConfig({
+    //             b: 'IDR', t: 'INR'
+    //         })
+    //     }
+    //     await getCurrency()
+    // }
 
     function showCurrency(currency) {
         return currency === 'INR' ? '₹' : 'Rp'
